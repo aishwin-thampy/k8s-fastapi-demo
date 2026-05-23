@@ -2,17 +2,6 @@ FastAPI on Kubernetes (Kind)
 
 A REST API built with FastAPI, containerized with Docker, and deployed to a local Kubernetes cluster using Kind.
 
-## Project Structure
-.
-├── app/
-│   └── main.py          # FastAPI application code
-├── k8s/
-│   ├── deployment.yaml  # Kubernetes Deployment manifest
-│   └── service.yaml     # Kubernetes Service manifest
-├── Dockerfile           # Container build instructions
-├── requirements.txt     # Python dependencies
-└── README.md
-
 ## Tech Stack
 - **Python / FastAPI** — REST API
 - **Docker** — Containerization
