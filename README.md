@@ -12,14 +12,14 @@ A REST API built with FastAPI, containerized with Docker, and deployed to a loca
 - Docker, Kind, kubectl installed
 
 ### Run locally
-docker build -t fastapi-demo:latest .
+docker build -t fastapi-demo:latest . <br>
 docker run -p 8000:8000 fastapi-demo:latest
 
 ### Deploy to Kubernetes
-kind create cluster --name fastapi-cluster
-kind load docker-image fastapi-demo:latest --name fastapi-cluster
-kubectl apply -f k8s/
-kubectl port-forward service/fastapi-service 8080:80
+kind create cluster --name fastapi-cluster <br>
+kind load docker-image fastapi-demo:latest --name fastapi-cluster <br>
+kubectl apply -f k8s/ <br>
+kubectl port-forward service/fastapi-service 8080:80 <br>
 
 
 ## API Endpoints
