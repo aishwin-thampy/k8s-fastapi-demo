@@ -21,7 +21,6 @@ kind load docker-image fastapi-demo:latest --name fastapi-cluster
 kubectl apply -f k8s/
 kubectl port-forward service/fastapi-service 8080:80
 
-Visit http://localhost:8080/docs for the interactive API docs.
 
 ## API Endpoints
 | Method | Endpoint | Description |
